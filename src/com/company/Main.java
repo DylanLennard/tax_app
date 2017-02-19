@@ -1,31 +1,35 @@
 package com.company;
+
 import java.util.Scanner; //used to get user input
 
 public class Main {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        double preTaxIncome;
-        double postTaxIncome;
+    double preTaxIncome;
+    double postTaxIncome;
 
-        System.out.println("Hello There, Friend!");
-        System.out.println("What's your Annual Income?");
+    System.out.println("Hello There, Friend!");
+    System.out.println("What's your Annual Income?");
 
-        // stick try catch in here
-        Scanner scan = new Scanner(System.in);
-        preTaxIncome = scan.nextInt();
+    // stick try catch in here
+    Scanner scan = new Scanner(System.in);
+    preTaxIncome = scan.nextInt();
 
-        postTaxIncome = calculate(preTaxIncome);
-        System.out.println(postTaxIncome);
+    postTaxIncome = calculate(preTaxIncome);
+    System.out.println(postTaxIncome);
 
-    }
+  }
 
-    public static double calculate(double preTaxIncome){
+  public static double calculate(double preTaxIncome) {
 
-        FederalTax fedIncome = new FederalTax(preTaxIncome);
-        StateTax stateIncome = new StateTax(preTaxIncome);
+    FederalTax fedIncome = new FederalTax(preTaxIncome);
+    StateTax stateIncome = new StateTax(preTaxIncome);
 
-        return fedIncome.getPreTaxIncome() + stateIncome.getPreTaxIncome();
+    fedIncome.calculate();
+    stateIncome.calculate();
 
-    }
+    return preTaxIncome - (fedIncome.getTaxedIncome() + stateIncome.getTaxedIncome());
+
+  }
 }
