@@ -9,9 +9,8 @@ public class MedicareTax extends TaxBase{
   https://www.ssa.gov/news/press/factsheets/colafacts2017.pdf
   */
 
-  private final static double MEDICARE_RATE = 1.45;
+  private final static double MEDICARE_RATE = 0.0145;
   private final static double MEDICARE_INCREASE_INCOME = 200_000;
-
 
   public MedicareTax(){}
   public MedicareTax(double income) {super(income);}
@@ -28,7 +27,5 @@ public class MedicareTax extends TaxBase{
       adjustTaxedIncome(MEDICARE_INCREASE_INCOME * MEDICARE_RATE);
       adjustTaxedIncome(getPreTaxIncome() - MEDICARE_INCREASE_INCOME * (MEDICARE_RATE + 0.009));
     }
-
   }
-
 }

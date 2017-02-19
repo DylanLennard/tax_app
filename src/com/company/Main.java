@@ -22,20 +22,19 @@ public class Main {
   }
 
   public static double calculate(double preTaxIncome) {
-    double postTaxIncome;
+    double postTaxIncome = preTaxIncome;
 
-    FederalTax fedIncome = new FederalTax(preTaxIncome);
-    StateTax stateIncome = new StateTax(preTaxIncome);
-    SocialSecurityTax ssTax = new SocialSecurityTax();
-    MedicareTax medicareTax = new MedicareTax();
+    TaxBase [] taxes = {
+      new FederalTax(preTaxIncome),
+        new StateTax(preTaxIncome),
+        new SocialSecurityTax(preTaxIncome),
+        new MedicareTax(preTaxIncome)
+    };
 
-    fedIncome.calculate();
-    stateIncome.calculate();
-    ssTax.calculate();
-    medicareTax.calculate();
-
-    postTaxIncome = preTaxIncome - (fedIncome.getTaxedIncome() + stateIncome.getTaxedIncome() +
-        ssTax.getTaxedIncome() + medicareTax.getTaxedIncome());
+    for (TaxBase tax: taxes){
+      tax.calculate();
+      postTaxIncome = postTaxIncome - tax.getTaxedIncome();
+    }
 
     return postTaxIncome;
 
