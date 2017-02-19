@@ -12,7 +12,7 @@ public class Main {
     System.out.println("Hello There, Friend!");
     System.out.println("What's your Annual Income?");
 
-    // stick try catch in here
+    // TODO: stick try catch statement in here
     Scanner scan = new Scanner(System.in);
     preTaxIncome = scan.nextInt();
 
@@ -25,11 +25,16 @@ public class Main {
 
     FederalTax fedIncome = new FederalTax(preTaxIncome);
     StateTax stateIncome = new StateTax(preTaxIncome);
+    SocialSecurityTax ssTax = new SocialSecurityTax();
+    MedicareTax medicareTax = new MedicareTax();
 
     fedIncome.calculate();
     stateIncome.calculate();
+    ssTax.calculate();
+    medicareTax.calculate();
 
-    return preTaxIncome - (fedIncome.getTaxedIncome() + stateIncome.getTaxedIncome());
+    return preTaxIncome - (fedIncome.getTaxedIncome() + stateIncome.getTaxedIncome() +
+                              ssTax.getTaxedIncome() + medicareTax.getTaxedIncome());
 
   }
 }

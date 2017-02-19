@@ -9,45 +9,30 @@ public abstract class TaxBase {
   private double [] taxBrackets;
   private double [] taxRates;
   private double preTaxIncome;
-  private double taxedIncome = 0;
+  private double taxedIncome;
 
-//  public TaxBase(){}
-//  public TaxBase (double income){
-//    setIncome(income);
-//  }
-  public TaxBase(double [] taxRates, double [] taxBrackets){
+  public TaxBase(double [] taxRates, double [] taxBrackets) {
     setTaxRates(taxRates);
     setTaxBracket(taxBrackets);
   }
-  public TaxBase(double income, double [] taxRates, double [] taxBracket){
+  public TaxBase(double income, double [] taxRates, double [] taxBracket) {
     setPreTaxIncome(income);
     setTaxRates(taxRates);
     setTaxBracket(taxBracket);
   }
 
-
-  public void setPreTaxIncome(double preTaxIncome){
-    this.preTaxIncome = preTaxIncome;
-  }
-  public void setTaxBracket(double [] taxBracket){
-    this.taxBrackets = taxBracket.clone(); //make this an equals method or something
-  }
-  public void setTaxRates(double [] taxRates){
-    this.taxRates = taxRates.clone();
-  }
+  public void setPreTaxIncome(double preTaxIncome) {this.preTaxIncome = preTaxIncome;}
+  public void setTaxBracket(double [] taxBracket) {this.taxBrackets = taxBracket.clone();}
+  public void setTaxRates(double [] taxRates) {this.taxRates = taxRates.clone();}
 
   public double getPreTaxIncome() {return this.preTaxIncome;}
-  public double [] getTaxRates(){return this.taxRates;}
-  public double [] getTaxBracket(){return this.taxBrackets;}
+  public double [] getTaxRates() {return this.taxRates;}
+  public double [] getTaxBracket() {return this.taxBrackets;}
 
-  public void adjustTaxedIncome(double value){
-    this.taxedIncome += value;
-  }
-  public double getTaxedIncome(){return this.taxedIncome;}
+  public void adjustTaxedIncome(double value) {this.taxedIncome += value;}
+  public double getTaxedIncome() {return this.taxedIncome;}
 
-
-
-  public void calculate(){
+  public void calculate() {
 
     int i = 0;
 
@@ -69,21 +54,16 @@ public abstract class TaxBase {
 
         adjustTaxedIncome(preTaxIncome - taxBrackets[i] * taxRates[i + 1]);
 
-        // check if first value and lower than first tax bracket
       } else if (preTaxIncome >= taxBrackets[i]){
 
         adjustTaxedIncome((taxBrackets[i] - taxBrackets[i-1]) * taxRates[i]);
-      } else { //lastly, if it's less than the current tax bracket, take difference between lower bracket and income
+
+      } else {
 
         adjustTaxedIncome((preTaxIncome - taxBrackets[i - 1]) * taxRates[i]);
         break;
 
       }
-
     }
-
-    // take two arrays and difference out the tax amounts appropriately
-
   }
-
 }
