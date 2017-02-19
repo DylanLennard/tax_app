@@ -22,6 +22,7 @@ public class Main {
   }
 
   public static double calculate(double preTaxIncome) {
+    double postTaxIncome;
 
     FederalTax fedIncome = new FederalTax(preTaxIncome);
     StateTax stateIncome = new StateTax(preTaxIncome);
@@ -33,8 +34,10 @@ public class Main {
     ssTax.calculate();
     medicareTax.calculate();
 
-    return preTaxIncome - (fedIncome.getTaxedIncome() + stateIncome.getTaxedIncome() +
-                              ssTax.getTaxedIncome() + medicareTax.getTaxedIncome());
+    postTaxIncome = preTaxIncome - (fedIncome.getTaxedIncome() + stateIncome.getTaxedIncome() +
+        ssTax.getTaxedIncome() + medicareTax.getTaxedIncome());
+
+    return postTaxIncome;
 
   }
 }

@@ -11,6 +11,9 @@ public abstract class TaxBase {
   private double preTaxIncome;
   private double taxedIncome;
 
+  public TaxBase(){}
+  public TaxBase(double income){setPreTaxIncome(income);}
+
   public TaxBase(double [] taxRates, double [] taxBrackets) {
     setTaxRates(taxRates);
     setTaxBracket(taxBrackets);
@@ -39,30 +42,21 @@ public abstract class TaxBase {
     for (i = 0; i < taxBrackets.length; i++) {
 
       if (i == 0){
+
         if (preTaxIncome >taxBrackets[i]) {
-
           adjustTaxedIncome(taxBrackets[i] * taxRates[i]);
-
         } else {
-
           adjustTaxedIncome(preTaxIncome * taxRates[i]);
           break;
-
         }
 
       } else if ((preTaxIncome > taxBrackets[i]) && (i == taxBrackets.length  - 1)) {
-
         adjustTaxedIncome(preTaxIncome - taxBrackets[i] * taxRates[i + 1]);
-
       } else if (preTaxIncome >= taxBrackets[i]){
-
         adjustTaxedIncome((taxBrackets[i] - taxBrackets[i-1]) * taxRates[i]);
-
       } else {
-
         adjustTaxedIncome((preTaxIncome - taxBrackets[i - 1]) * taxRates[i]);
         break;
-
       }
     }
   }
