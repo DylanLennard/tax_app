@@ -1,6 +1,7 @@
 package com.company;
 
-import java.util.Scanner; //used to get user input
+import java.text.DecimalFormat; // to gain access to number formatting
+import java.util.Scanner; // to get user input
 
 public class Main {
 
@@ -10,6 +11,8 @@ public class Main {
 
     double preTaxIncome;
     double postTaxIncome;
+    // the below solution taken from: http://stackoverflow.com/questions/8895337/how-do-i-limit-the-number-of-decimals-printed-for-a-double
+    DecimalFormat numberFormat = new DecimalFormat("#.00");
 
     System.out.println("Hello There, Friend!");
     System.out.println("What's your Annual Income?");
@@ -19,7 +22,8 @@ public class Main {
       preTaxIncome = scan.nextInt();
 
       postTaxIncome = calculate(preTaxIncome);
-      System.out.println(postTaxIncome);
+      System.out.println("Your post-tax annual income would be: "+ numberFormat.format(postTaxIncome));
+      System.out.println("This would be a monthly income of: "+ numberFormat.format(postTaxIncome / 12.0));
     } catch (Exception e){
       System.out.println(e.getMessage());
     }
