@@ -6,6 +6,8 @@ public class Main {
 
   public static void main(String[] args) {
 
+    // TODO: enact enums to capture if self-employed or not
+
     double preTaxIncome;
     double postTaxIncome;
 
