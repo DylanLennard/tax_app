@@ -4,7 +4,6 @@
     <list default="true" id="0e4caed9-4609-47c0-8aec-280230fa1959" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/MedicareTax.java" afterPath="$PROJECT_DIR$/src/com/company/MedicareTax.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/SocialSecurityTax.java" afterPath="$PROJECT_DIR$/src/com/company/SocialSecurityTax.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +22,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="330">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -43,8 +42,8 @@
       <file leaf-file-name="MedicareTax.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/MedicareTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+            <state relative-caret-position="385">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -53,7 +52,7 @@
       <file leaf-file-name="TaxBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/TaxBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="525">
               <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="30" />
               <folding />
             </state>
@@ -63,8 +62,8 @@
       <file leaf-file-name="StateTax.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/StateTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="84" lean-forward="false" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+            <state relative-caret-position="150">
+              <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
               <folding>
                 <element signature="e#572#573#0" expanded="true" />
                 <element signature="e#616#617#0" expanded="true" />
@@ -78,8 +77,8 @@
       <file leaf-file-name="FederalTax.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/FederalTax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="270">
+              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
               <folding>
                 <element signature="e#520#521#0" expanded="true" />
                 <element signature="e#560#561#0" expanded="true" />
@@ -113,15 +112,16 @@
         <option value="$PROJECT_DIR$/src/com/company/FederalTax.java" />
         <option value="$PROJECT_DIR$/src/com/company/StateTax.java" />
         <option value="$PROJECT_DIR$/src/com/company/TaxBase.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MedicareTax.java" />
         <option value="$PROJECT_DIR$/src/com/company/SocialSecurityTax.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MedicareTax.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="812" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -174,9 +174,6 @@
         </subPane>
       </pane>
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -591,7 +588,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -603,7 +600,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3781965" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -636,10 +633,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/SocialSecurityTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MedicareTax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TaxBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/FederalTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        <state relative-caret-position="270">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
           <folding>
             <element signature="e#520#521#0" expanded="true" />
             <element signature="e#560#561#0" expanded="true" />
@@ -651,8 +672,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/StateTax.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="84" lean-forward="false" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        <state relative-caret-position="150">
+          <caret line="10" column="61" lean-forward="true" selection-start-line="10" selection-start-column="61" selection-end-line="10" selection-end-column="61" />
           <folding>
             <element signature="e#572#573#0" expanded="true" />
             <element signature="e#616#617#0" expanded="true" />
@@ -662,34 +683,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/TaxBase.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MedicareTax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/SocialSecurityTax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="129">
+          <caret line="2074" column="0" lean-forward="false" selection-start-line="2074" selection-start-column="0" selection-end-line="2074" selection-end-column="0" />
+          <folding>
+            <element signature="e#78006#78007#0" expanded="true" />
+            <element signature="e#78050#78051#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="24" column="40" lean-forward="false" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state relative-caret-position="330">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>

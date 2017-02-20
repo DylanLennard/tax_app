@@ -12,12 +12,16 @@ public class Main {
     System.out.println("Hello There, Friend!");
     System.out.println("What's your Annual Income?");
 
-    // TODO: stick try catch statement in here
-    Scanner scan = new Scanner(System.in);
-    preTaxIncome = scan.nextInt();
+    try {
+      Scanner scan = new Scanner(System.in);
+      preTaxIncome = scan.nextInt();
 
-    postTaxIncome = calculate(preTaxIncome);
-    System.out.println(postTaxIncome);
+      postTaxIncome = calculate(preTaxIncome);
+      System.out.println(postTaxIncome);
+    } catch (Exception e){
+      System.out.println(e.getMessage());
+    }
+
 
   }
 

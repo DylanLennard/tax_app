@@ -26,6 +26,7 @@ public class MedicareTax extends TaxBase{
 
       adjustTaxedIncome(MEDICARE_INCREASE_INCOME * MEDICARE_RATE);
       adjustTaxedIncome(getPreTaxIncome() - MEDICARE_INCREASE_INCOME * (MEDICARE_RATE + 0.009));
+
     }
   }
 }
